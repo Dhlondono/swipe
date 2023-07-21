@@ -1,0 +1,216 @@
+/* seccion 1 */
+body{
+    background-image: url(./assets/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: 100%;
+}
+
+
+
+.barrinit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 0 0 64px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.menu a{
+    margin: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+.button-signup{
+    font-size: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    border-color: purple;
+    background-color: blueviolet;
+}
+
+.button-signup:hover{
+    background-color: rebeccapurple ;
+    cursor: pointer;
+}
+
+.payments{
+    display: flex;
+    justify-content: center;
+}
+
+.column-left{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 0 50px 0 50px;
+    width: 65%;
+
+}
+
+.phone{
+    width: 400px;
+    height: 600px;
+    margin: 20;
+    padding-right: 20px;
+    box-sizing: border-box;
+
+}
+
+h1{
+    font-size: 500%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    font-size: 200%;
+    display: flex;
+    margin: 0 0 50px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.buttonstar{
+    border-radius: 15px;
+    font-size: 25px ;
+    background-color: #000057;
+    padding: 5px 15px;
+    border: none;
+    color: aliceblue;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+.buttonstar:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+
+.buttoncontact{
+    border-radius: 15px;
+    font-size: 25px ;
+    background-color: transparent;
+    padding: 5px 15px;
+    border: none;
+    color: slateblue;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.buttoncontact:hover{
+    background-color: beige ;
+    cursor: pointer;
+}
+
+
+.partners img{
+    height: 50px;
+    place-self: center;
+
+}
+.partners{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr;
+    margin: 10px 50px;
+
+}
+.hamburger_button{
+    display: none;
+}
+@media only screen and (max-width:1100px) {
+.button-signup{
+    display: none;
+}
+.column-left{
+    padding: 0 50px 0 50px;
+    width: 65%;
+
+}
+
+.phone{
+    width: 350px;
+    height: 450px;
+    margin: 20;
+    padding-right: 20px;
+}
+
+h1{
+    font-size: 400%;
+    
+}
+
+p{
+    font-size: 150%;
+    margin: 0 0 40px 0;
+}
+    
+}
+
+@media only screen and (max-width:760px) {
+    .button-signup{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .hamburger_button{
+        display: flex;
+    }
+    .hamburger{
+        display: flex; 
+        width: 50px; 
+        border-radius: 10px; 
+        background-color: transparent;
+        font-weight: bold;
+        align-items: center;
+        justify-self: center;
+        flex-direction: column;
+        
+    }
+    .column-left{
+        padding: 0 50px 0 50px;
+        width: 65%;
+    
+    }
+    .phone{
+        display: none;
+    }
+    
+    h1{
+        font-size: 400%;
+        
+    }
+    
+    p{
+        font-size: 150%;
+        margin: 0 0 40px 0;
+    }
+    .partners{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1fr 1fr 1fr 1fr;
+        margin: 10px 50px;
+    }
+}
+
+
