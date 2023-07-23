@@ -57,7 +57,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-items: center;
-    padding: 0 50px 0 50px;
+    margin: 0 50px 0 50px;
     width: 65%;
 
 }
@@ -65,7 +65,7 @@ body{
 .phone{
     width: 400px;
     height: 600px;
-    margin: 20;
+    margin: 20px;
     padding-right: 20px;
     box-sizing: border-box;
 
@@ -142,20 +142,20 @@ p{
     display: none;
 }
 .column-left{
-    padding: 0 50px 0 50px;
-    width: 65%;
+    margin: 0 50px 0 50px;
+    width: 40%;
 
 }
 
 .phone{
     width: 350px;
     height: 450px;
-    margin: 20;
-    padding-right: 20px;
+    margin: 20px;
+    padding-right: 0px;
 }
 
 h1{
-    font-size: 400%;
+    font-size: 300%;
     
 }
 
@@ -188,7 +188,7 @@ p{
         
     }
     .column-left{
-        padding: 0 50px 0 50px;
+        margin: 0 50px 0 50px;
         width: 65%;
     
     }
@@ -213,4 +213,99 @@ p{
     }
 }
 
+/* seccion 2 */
+.payments_products{
+    background-color: aliceblue;
+}
 
+.payments_products .buttonnow{
+    margin: 20px 50px;
+}
+
+.text_container p{
+    display: flex;
+    color: #000057;
+    margin: 50px;
+    font-size: x-large;
+}
+
+h2{
+    display: flex;
+    font-size: xxx-large;
+    margin: 0 0 0 50px;
+    width: 50%;
+}
+.colums{
+    display: flex;
+    margin: 0 50px 0 0px
+}
+.col-left p{
+    display: block;
+    width: 550px;
+    color: black;
+    font-size: larger;
+}
+.col-rigth p{
+    display: block;
+    color: black;
+    font-size: larger;
+}
+
+.buttonnow .buttonstar{
+    background-color: slateblue;
+}
+
+.buttonnow .buttonstar:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.grid_img{
+    display: grid;
+    grid-template-areas:
+        "card slack slack"
+        "phone slack slack"
+        "phone dash dash";
+    grid-gap: 35px;
+    margin: 0 50px 32px 50px;
+}
+
+#credit-card {
+    grid-area: card;
+    width: 100%;
+}
+
+#slack {
+    grid-area: slack;
+    width: 100%;
+}
+  
+#iphone {
+    grid-area: phone;
+    width: 100%;
+}
+#dash {
+    grid-area: dash;
+    width: 100%;
+}
+
+@media only screen and (max-width:1100px) {
+    .col-left p{
+        width: 400px;
+    }
+    
+}
+
+
+
+@media only screen and (max-width:760px) {
+    h2{
+        width: 90%;
+    }
+    .colums{
+        flex-direction: column;
+    }    
+    .col-left p{
+        width: 80%;
+    }
+}
