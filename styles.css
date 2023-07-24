@@ -407,7 +407,7 @@ h3{
 .option_text{
     display: flex;
     box-sizing: content-box;
-    font-size: 10px;
+    font-size: 20px;
     color: darkgrey;
 }
 .option_button{
@@ -451,3 +451,27 @@ h3{
         display: none;
     }
 }
+
+/* Seccion 4 */
+.why-swipe{
+    display: flex;
+    justify-content: center;
+    padding: 200px 0;
+}
+
+.why-swipe .text_container{
+    margin: 0 50px;
+}
+
+.why-swipe .subtitle1{
+    padding: 50px 20px;
+}
+
+.why-swipe .text_container h2{
+    width: 100%;
+    font-family: math;
+    margin-left: 20px;
+}
+ .title-text{
+    color: black;
+ }
